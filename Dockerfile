@@ -4,6 +4,7 @@ ADD conf/nginx.conf /etc/nginx/nginx.conf
 
 ADD script/entrypoint.sh /entrypoint.sh
 ADD script/le.sh /le.sh
+ADD service.conf /etc/nginx/service.conf
 
 RUN \
  rm /etc/nginx/conf.d/default.conf && \
